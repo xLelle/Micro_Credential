@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="checkout.css" type="text/css">
+    <style>
+        html{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="thankyou.html" method="post" class="BuyForm">
+        <fieldset style="width: 60%; margin-left:auto; margin-right:auto;">
+<legend style="color: rgb(236, 236, 160);">CHECKOUT</legend><h1 style="color: aquamarine;"><center>Add items to your bag</center></h1>
+
+
+<div id="cart-wrap" >
+
+    <!-- PRODUCTS LIST -->
+    <div id="cart-products"></div>
+
+    <!-- CURRENT CART -->
+    <div id="cart-items"></div>
+  </div>
+<label for="un" style="padding: 1em; color: aquamarine; display:block;">Enter username: 
+    <input type="text" name="username" placeholder="Type username" id="un" >
+</label>
+    <label for="email" style="display: block;margin-left:auto; padding: 1em; color: aquamarine;">Enter email address: 
+        <input type="email" name="emailAddress" placeholder="Type email address" >
+    </label>
+<input type="submit" name="submit" value="SUBMIT ORDER" style="margin: 1em; display: block; margin-left:auto; margin-right:auto; border-radius: 10%;" class="bttn">
+        </fieldset>
+    </form>
+    <script src="products.js"></script>
+    <script src="cart.js"></script>
+</body>
+</html>
